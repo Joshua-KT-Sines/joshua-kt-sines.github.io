@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ethical Hacking 101: NMAP</title>
+<link href="css/styles.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    table, th, td, thead {
+    border: 1px solid #FF5722 ;
+    border-collapse: collapse;
+    background:#EEEEEE;
+    color: #222831;
+    }
+</style>
+</head>
+<body>
+	<div class="header">
+        <div class="title">
+            <h1>Ethical Hacking 101: NMAP</h1>
+        </div>
+
+        <div class="logo-img">
+            <img src="images/nmap.png" width="20%">
+        </div>
+
+        <div class="navlinks">
+            <div class="navlink"><a href="‌index.html">Homepage</a></div>
+            <div class="navlink"><a href="ness.html">Nessus scan</a></div>
+            <div class="navlink"><a href="nmap.html">NMAP</a></div>
+            <div class="navlink"><a href="exploitdb.html">Expoilt DB</a></div>
+
+        </div>
+    </div>
+    
+    <div class="mid-bar"></div>
+
+    <div class="top-mid">
+        <img src="images/map.jpg" width="100%" height="0%">
+    </div>
+    
+    <div class="mid-bar2"></div>
+
+    <div class="article-part" style="height: 110%;">
+        <h1>How to use NMAP</h1>
+        <br>
+        <p1>Before starting you should have the following.
+
+        </p1>
+        <ul>
+            <li>A linux virtual machine (perferably kali linux) <a href="https://www.kali.org/get-kali/#kali-virtual-machines" target="_blank" style="text-decoration: underline;">Click Me</a></li>
+            <li>A good understanding of tcp, udp, ip, subnet, ports, ect.</li>
+            <li>Virtual Box installed <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" style="text-decoration: underline;">Click Me</a></li>
+            <li>A metasploitable machine <a href="https://sourceforge.net/projects/metasploitable/" target="_blank" style="text-decoration: underline;">Click Me</a></li>
+            <li>A Virtual Router linked with metasploitable and Kali linux <a href="https://www.pfsense.org/download/" target="_blank" style="text-decoration: underline;">Click Me</a></li>
+        </ul>
+        <br>
+        <br>
+        <h2>What is NMAP</h2>
+        <p1>Nmap is a network mapper that has emerged as one of the most popular, 
+            free network discovery tools on the market. Nmap is now one of the core 
+            tools used by network administrators to map their networks. The program 
+            can be used to find live hosts on a network, perform port scanning, ping 
+            sweeps, OS detection, and version detection.
+        </p1>
+        <br>
+        <br>
+        <p1>In the table below, you will see a list of common commands used with nmap</p1>
+        <br>
+        <b>
+        <table class="commands">
+            <th>Command</th>
+            <th>What it does</th>
+            <tr>
+                <td>nmap -sp "private-ip/x"</td>
+                <td>Scans for all of the hosts on a /x subnet.</td>
+            </tr>
+            <tr>
+                <td>nmap -A -T4 "ip"</td>
+                <td>Scans the given host and identifys the software running on that machine example:apache.</td>
+            </tr>
+            <tr>
+                <td>nmap –F "ip"</td>
+                <td>Scans for open common ports</td>
+            </tr>
+            <tr>
+                <td>nmap –sS 192.168.0.1</td>
+                <td>Scans a ip address by sending a TCP request but not securing the connection with a SYN ACK</td>
+            </tr>
+        </table>
+
+        <br>
+        <iframe width="70%" height="45%" src="https://www.youtube.com/embed/W7076RPIgfQ" title="NMAP Basics Tutorial for Kali Linux Beginners - Cyber Security" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="footer" style="top: 190%;">
+        <div class="navlinks2">
+            <a href="https://github.com/Joshua-KT-Sines/joshua-kt-sines.github.io" target="_blank">Source Code</a>
+            <a href="tools.html">Common Tools</a>
+            <a href="linux.html">Linux distro</a>
+        </div>
+    
+</body>
+</html>
